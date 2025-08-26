@@ -27,8 +27,7 @@ func NewFactory(dbType string) DBFactory {
 	}
 }
 
-//// 具体工厂
-//
+// 具体工厂
 type MySQLFactory struct{}
 
 func (f *MySQLFactory) CreateConnection() DBConnection {
@@ -55,7 +54,6 @@ func (cmd *MySQLCommand) Execute(command string) (string, error) {
 	return "MySQL executed: " + command, nil
 }
 
-//
 type PostgreSQLFactory struct{}
 
 func (f *PostgreSQLFactory) CreateConnection() DBConnection {
@@ -81,5 +79,3 @@ type PostgreSQLCommand struct{}
 func (cmd *PostgreSQLCommand) Execute(command string) (string, error) {
 	return "PostgreSQL executed: " + command, nil
 }
-
-//
