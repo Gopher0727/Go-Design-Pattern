@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Gopher",
+    "email": "gopher0727@gmail.com"
+}
+
+
+### 
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Tea",
+    "email": "1900271083@qq.com"
+}
